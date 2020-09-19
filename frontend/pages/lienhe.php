@@ -118,10 +118,10 @@ if (session_id() === '') {
                 // - Chỉ nên sử dụng TABLE, TR, TD, và các định dạng cơ bản của CSS để thiết kế
                 // - Các đường link/hình ảnh có sử dụng trong mẫu thiết kế MAIL phải là đường dẫn WEB có thật, ví dụ như logo,banner,...
                 $body = <<<EOT
-    Có người liên hệ cần giúp đỡ. <br />
-    Email của khách: $email <br />
-    Nội dung: <br />
-    $message
+                Có người liên hệ cần giúp đỡ. <br />
+                Email của khách: $email <br />
+                Nội dung: <br />
+                $message
 EOT;
                 $mail->Body    = $body;
 
